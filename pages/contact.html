@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="../css_style/style.css">
+</head>
+
+
+<body>
+  <!-- _____________ HEADER ____________ -->
+  <header>
+    <div class="container">
+      <div class="pagename">
+        <h1>Anastasios Yiannakidis | <span class="subcategory">Contact<div></h1>
+      </div>
+
+      <!-- ____________ NAVIGATION _________ -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="digital_art.html">Digital Art</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+      <form action="/my-contact-form" method="post">
+        <!-- Contact info -->
+        <fieldset id="contactme">
+          <legend>Send me your message!</legend>
+          <div>
+            <label for="type">Type:</label>
+            <select id="type" name="type">
+              <option value="question">Question</option>
+              <option value="business">Business</option>
+              <option value="suggestion">Suggestion</option>
+              <option value="Coplaint">Coplaint</option>
+              </select>
+          </div>
+
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+
+          <div>
+            <label for="question">Question:</label>
+            <textarea id="question" name="user_question" placeholder="Write something.."></textarea>
+          </div>
+
+          <div>
+            <label for="tel">Telephone:</label>
+            <input type="text" id="tel" name="telnum">
+          </div>
+
+          <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_mail">
+          </div>
+
+        </fieldset>
+
+
+
+
+        <fieldset id="contactme">
+          <legend>How should I contact you?</legend>
+          <ul>
+            <li>
+              <label for="way1">Telephone:</label>
+              <input type="radio" id="way1" name="way_of_contact" value="Telephone">
+            </li>
+
+            <li>
+              <label for="way2">Email:</label>
+              <input type="radio" id="way2" name="way_of_contact" value="Email">
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="button">
+          <button type="submit">Send</button>
+        </div>
+
+      </form>
+    </article>
+
+
+
+
+
+
+
+
+  </main>
+</body>
+
+</html>
