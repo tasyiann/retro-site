@@ -1,0 +1,12 @@
+/* TEAM */
+	Chef: Anastasios Yiannakidis
+	Twitter: [ [ a t ] ] y i a n n a k i d e s
+	From: Cyprus, Nicosia
+
+
+
+/* SITE */
+	Last update:2017/09/13
+	Language: English
+	Doctype:HTML5
+	IDE: Visual Studio Code
