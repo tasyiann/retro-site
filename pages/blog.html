@@ -38,20 +38,60 @@
       <div class="blog">
         <article>
           <h2>Open Graph</h2>
+          <div class="post_info"> Posted by Anastasios, <time datetime="2017-09-09">2017-09-09</time></div>
         </article>
 
         <article>
           <h2>humans.txt</h2>
+          <div class="post_info"> Posted by Anastasios, <time datetime="2017-09-09">2017-09-09</time></div>
+          <h3>What is humans.txt?</h3>
+          <p>It is a txt file that contains information about the people who have
+            contributed to build the website.
+          </p>
+          <h3>How have I configure it for my site?</h3>
+          <p>Since my team is <em>literally me</em>, my humans.txt file looks like this:</p>
+           <xmp>
+              /* TEAM */
+              Chef: Anastasios Yiannakidis
+              Twitter: [ [ a t ] ] y i a n n a k i d e s
+              From: Cyprus, Nicosia
+          
+            /* SITE */
+              Last update:2017/09/13
+              Language: English
+              Doctype:HTML5
+              IDE: Visual Studio Code
+           </xmp>
+         
         </article>
 
         <article>
           <h2>robots.txt</h2>
+          <div class="post_info"> Posted by Anastasios, <time datetime="2017-09-09">2017-09-09</time></div>
+        <h3>What is robots.txt?</h3>
+        <p>The robots.txt file belongs to the REP (robots exclusion protocol) which is a group of web standards. 
+          These web standards show how robots can crawl the web and access information.
+          The robots.txt files, let the web crawlers (user agents) to know which parts of the website are allowed
+          to crawl, and which parts are not.
+        </p>
+        <h3>How have I configure it for my site?</h3>
+        <p>Following the instructions of the assignment, I disallow the access to contact me page,
+          from all web crawlers. Also, following my instinct, I disallow also the access to all .jpeg images.
+          <xmp>
+              User-agent:*
+              Disallow: /pages/contact.html
+              Disallow: /*.jpg$
+          </xmp>
+        </p>
         </article>
 
         <article>
           <h2>.css and .html</h2>
-          <p>Why is it important to seperate the layout and design (css)
-            from content (html)? One of the reasons is to avoid confusing
+          <div class="post_info"> Posted by Anastasios, <time datetime="2017-09-09">2017-09-09</time></div>
+          <h3>Why is it important to seperate the layout and design (css)
+            from content (html)?
+          </h3>  
+          <p>One of the reasons is to avoid confusing
             the purpose of their usage. Htlm should be semantic and css should
             make the styling. In addition, keeping them in seperate files, is easier
             to maintain and to debug.</p>
@@ -60,6 +100,7 @@
       
         <article>
         <h2>BONUS - Trip to China</h2>
+        <div class="post_info"> Posted by Anastasios, <time datetime="2017-09-09">2017-09-09</time></div>
         <p>A <em>unique</em> experience.<br> Thanks to Confucius Institute,
           I did not just travel to China. I experienced the <em>Chinese culture</em>,
           that I have always admire. The summer camp was way beyond my expectations.
@@ -86,11 +127,12 @@
               </div>
           </div>
       </article>
-
-
-
       </div>
     </main>
 
+    <!-- _____________FOOTER _____________ -->
+    <footer>
+        <p>Copyright © 2017 Anastasios Yiannakidis</p>
+    </footer>
   </body>
 </html>

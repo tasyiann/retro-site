@@ -50,27 +50,40 @@ header a:hover{
 /* * * * * Body * * * **/
 body{
   width: 100%;
+  height:100%;
   margin: auto;
   background-image: url("../images/other/background.jpg");
   background-color:#A4A4A4;
   background-repeat: repeat;
+  padding-bottom:60px; /* height of the footer */
 }
 
 main{
-  text-align: center;
   padding-top: 80px;
-  max-width: 960px;
+  max-width: 860px;
   margin: 0px auto;
+}
 
+h2{
+  text-align: center;
 }
 
 article{
+  font-family: 'Time';
   padding:5px;
   border: 2px solid #000000;
   margin-bottom: 10px;
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.65), 0 10px 24px 0 rgba(0, 0, 0, 0.25);
   overflow:hidden;
   background: white;
+}
+
+.centered_article{
+  text-align: center;
+}
+
+.centered_article li{
+  list-style-position:inside;
 }
 
 article h2{
@@ -83,9 +96,18 @@ img.border{
   border: 5px solid black;
 }
 
+.post_info{
+  text-align: right;
+  font-style: italic;
+  font-size: 13px;
+}
+
 /* Polaroid photos */
 #polaroidphotos{
-  padding-left:150px;
+  width:100%;
+  /*padding-left:100px;*/
+  margin:auto;
+
 }
 
 div.polaroid {
@@ -129,21 +151,39 @@ figure.portofolio figcaption{
 }
 
 /*Contact*/
-#contactme{
+#contactme, #how_contactme{
   width:400px;
   margin: auto; /* in order to center things */
-  
 }
+
+#contactme label, #how_contactme label{
+  font-weight: bold;
+}
+
+fieldset#contactme input, fieldset#contactme textarea{
+  width: 100%;
+  margin: auto;
+}
+
+div.button{
+  width: 100%;
+  text-align: center;
+}
+
 
 
 /* * * * * Footer* * * * */
 footer{
-  background:#645B5B;
+  position: absolute;
+  bottom:0;
+  clear: both;
+  background:rgba(57, 55, 55, 0.40);
   color:white;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  padding: 1rem;
+  width:100%;
+  height:60px;
 }
 
-
+html{
+  min-height: 100%;
+  position:relative;
+}
