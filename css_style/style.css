@@ -3,6 +3,7 @@ html{
   position:relative;
 }
 
+
 /* * * * * Header * * * * */
 header{
   background: #3A3232;
@@ -101,6 +102,7 @@ img.border{
   border: 5px solid black;
 }
 
+
 .post_info{
   text-align: right;
   font-style: italic;
@@ -110,7 +112,6 @@ img.border{
 /* Polaroid photos */
 #polaroidphotos{
   width:100%;
-  /*padding-left:100px;*/
   margin:auto;
 
 }
@@ -189,3 +190,51 @@ footer{
   text-align: right;
 }
 
+/* Responsive */
+@media screen and (max-width:900px){
+  .pagename{
+    width:100%;
+  }
+  nav{
+    width:100%;
+    margin-top:-20px;
+  }
+
+}
+
+
+@media screen and (max-width:520px){
+  nav li{
+    float: initial;
+    border: 1px solid #C5C5C5;
+    margin-left:-20px;
+    margin-bottom: 2px;
+    width:100%;
+    text-align: center;
+  }
+
+  nav li a{
+    display:block;
+  }
+
+  nav{
+    width:100%;
+    left:0px;
+    background: #3B3636;
+    color:white;
+    margin-top:0px;
+  }
+
+  main{
+    padding-top: 230px;
+  }
+
+  header{
+    background: #3A3232;
+    width: 100%;
+    top: 0px;
+    position: absolute;
+  }
+
+
+}
